@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://ec2.ap-southeast-1.amazonaws.com/
+    body:
+      encoding: UTF-8
+      string: Action=DescribeInstances&Version=2015-04-15
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=utf-8
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby2/2.0.43 ruby/2.2.2 x86_64-darwin14
+      X-Amz-Date:
+      - 20150607T012355Z
+      Host:
+      - ec2.ap-southeast-1.amazonaws.com
+      X-Amz-Content-Sha256:
+      - 5cf362095e1c4a19ec76902847415d1ebb7d43beaf47280960f29c059a1ed2d3
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIO3PFOLM7KKTQZJQ/20150607/ap-southeast-1/ec2/aws4_request,
+        SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date,
+        Signature=677f3cccee6b9ef78399ebd2b44594c6a981e7f426bf1c363a9ff71718015c41
+      Content-Length:
+      - '43'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sun, 07 Jun 2015 01:23:55 GMT
+      Server:
+      - AmazonEC2
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <DescribeInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2015-04-15/">
+            <requestId>be56b9e5-f938-4398-a8e0-969e3dd566b0</requestId>
+            <reservationSet>
+                <item>
+                    <reservationId>r-009ef4cd</reservationId>
+                    <ownerId>908941582419</ownerId>
+                    <groupSet>
+                        <item>
+                            <groupId>sg-c5ce9590</groupId>
+                            <groupName>solarch-stage1-Stage1SecGrp-1ICNCY2FEZSD9</groupName>
+                        </item>
+                    </groupSet>
+                    <instancesSet>
+                        <item>
+                            <instanceId>i-7291bcbf</instanceId>
+                            <imageId>ami-e8f1c1ba</imageId>
+                            <instanceState>
+                                <code>16</code>
+                                <name>running</name>
+                            </instanceState>
+                            <privateDnsName>ip-10-144-24-114.ap-southeast-1.compute.internal</privateDnsName>
+                            <dnsName>ec2-54-179-51-18.ap-southeast-1.compute.amazonaws.com</dnsName>
+                            <reason/>
+                            <keyName>aisrael</keyName>
+                            <amiLaunchIndex>0</amiLaunchIndex>
+                            <productCodes/>
+                            <instanceType>t1.micro</instanceType>
+                            <launchTime>2015-06-05T19:02:52.000Z</launchTime>
+                            <placement>
+                                <availabilityZone>ap-southeast-1a</availabilityZone>
+                                <groupName/>
+                                <tenancy>default</tenancy>
+                            </placement>
+                            <kernelId>aki-503e7402</kernelId>
+                            <monitoring>
+                                <state>disabled</state>
+                            </monitoring>
+                            <privateIpAddress>10.144.24.114</privateIpAddress>
+                            <ipAddress>54.179.51.18</ipAddress>
+                            <groupSet>
+                                <item>
+                                    <groupId>sg-c5ce9590</groupId>
+                                    <groupName>solarch-stage1-Stage1SecGrp-1ICNCY2FEZSD9</groupName>
+                                </item>
+                            </groupSet>
+                            <architecture>x86_64</architecture>
+                            <rootDeviceType>ebs</rootDeviceType>
+                            <rootDeviceName>/dev/sda1</rootDeviceName>
+                            <blockDeviceMapping>
+                                <item>
+                                    <deviceName>/dev/sda1</deviceName>
+                                    <ebs>
+                                        <volumeId>vol-e038c808</volumeId>
+                                        <status>attached</status>
+                                        <attachTime>2015-06-05T19:02:55.000Z</attachTime>
+                                        <deleteOnTermination>true</deleteOnTermination>
+                                    </ebs>
+                                </item>
+                                <item>
+                                    <deviceName>/dev/sdb</deviceName>
+                                    <ebs>
+                                        <volumeId>vol-ff38c817</volumeId>
+                                        <status>attached</status>
+                                        <attachTime>2015-06-05T19:02:55.000Z</attachTime>
+                                        <deleteOnTermination>true</deleteOnTermination>
+                                    </ebs>
+                                </item>
+                            </blockDeviceMapping>
+                            <virtualizationType>paravirtual</virtualizationType>
+                            <clientToken>solar-Stage-AM7UD4S3SDMI</clientToken>
+                            <tagSet>
+                                <item>
+                                    <key>aws:cloudformation:stack-name</key>
+                                    <value>solarch-stage1</value>
+                                </item>
+                                <item>
+                                    <key>aws:cloudformation:stack-id</key>
+                                    <value>arn:aws:cloudformation:ap-southeast-1:908941582419:stack/solarch-stage1/625f7f80-0bb5-11e5-8b38-50018233b2b4</value>
+                                </item>
+                                <item>
+                                    <key>aws:cloudformation:logical-id</key>
+                                    <value>Stage1Instance</value>
+                                </item>
+                            </tagSet>
+                            <hypervisor>xen</hypervisor>
+                            <networkInterfaceSet/>
+                            <ebsOptimized>false</ebsOptimized>
+                        </item>
+                    </instancesSet>
+                </item>
+            </reservationSet>
+        </DescribeInstancesResponse>
+    http_version: 
+  recorded_at: Sun, 07 Jun 2015 01:23:56 GMT
+recorded_with: VCR 2.9.3
