@@ -1,6 +1,11 @@
 # active_aws
 
-A set of wrappers or helpers for the AWS SDK for Ruby v2
+A set of wrappers or helpers for the
+[AWS SDK for Ruby - Version 2](http://docs.aws.amazon.com/sdkforruby/api/index.html)
+
+## Examples
+
+See the Relish documentation: https://relishapp.com/aisrael/active-aws/docs
 
 ## Contributing to active_aws
  

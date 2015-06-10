@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = 'active_aws'
   gem.homepage = 'http://github.com/aisrael/active_aws'
   gem.license = 'MIT'
-  gem.summary = 'Provides utility classes, helpers and decorators to the AWS Ruby SDK v2'
-  gem.description = 'Provides utility classes, helpers and decorators to the AWS Ruby SDK v2'
+  gem.summary = 'Provides utility classes, helpers and decorators for AWS SDK for Ruby - Version 2'
+  gem.description = 'Provides utility classes, helpers and decorators for Version 2 of the AWS SDK for Ruby'
   gem.email = 'aisrael@gmail.com'
   gem.authors = ['Alistair A. Israel']
   # dependencies defined in Gemfile
