@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://ec2.ap-southeast-1.amazonaws.com/
+    body:
+      encoding: UTF-8
+      string: Action=DescribeAvailabilityZones&Version=2015-04-15
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=utf-8
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby2/2.0.43 ruby/2.2.2 x86_64-darwin14
+      X-Amz-Date:
+      - 20150610T051058Z
+      Host:
+      - ec2.ap-southeast-1.amazonaws.com
+      X-Amz-Content-Sha256:
+      - a4541cc6cd06d90dbf380a65d6eaab5b64476077df590c1b7d34985c7100f489
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIBEZVV2CZ3CDJ77Q/20150610/ap-southeast-1/ec2/aws4_request,
+        SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date,
+        Signature=c4d5fd2f29122f57d4a4756a17b02874cd8dec82b7948ba20a0d2d4f11db49fb
+      Content-Length:
+      - '51'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Wed, 10 Jun 2015 05:11:00 GMT
+      Server:
+      - AmazonEC2
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <DescribeAvailabilityZonesResponse xmlns="http://ec2.amazonaws.com/doc/2015-04-15/">
+            <requestId>c81feb66-ad26-47c1-95f8-455ada6cef28</requestId>
+            <availabilityZoneInfo>
+                <item>
+                    <zoneName>ap-southeast-1a</zoneName>
+                    <zoneState>available</zoneState>
+                    <regionName>ap-southeast-1</regionName>
+                    <messageSet/>
+                </item>
+                <item>
+                    <zoneName>ap-southeast-1b</zoneName>
+                    <zoneState>available</zoneState>
+                    <regionName>ap-southeast-1</regionName>
+                    <messageSet/>
+                </item>
+            </availabilityZoneInfo>
+        </DescribeAvailabilityZonesResponse>
+    http_version: 
+  recorded_at: Wed, 10 Jun 2015 05:11:01 GMT
+recorded_with: VCR 2.9.3

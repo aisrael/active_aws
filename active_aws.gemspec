@@ -11,12 +11,12 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Alistair A. Israel"]
-  s.date = "2015-06-07"
+  s.date = "2015-06-10"
   s.description = "Provides utility classes, helpers and decorators to the AWS Ruby SDK v2"
   s.email = "aisrael@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "READMEmd"
+    "README.md"
   ]
   s.files = [
     ".ruby-gemset",
@@ -24,9 +24,11 @@ Gem::Specification.new do |s|
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "READMEmd",
+    "README.md",
     "Rakefile",
     "VERSION",
+    "active_aws.gemspec",
+    "config/cucumber.yml",
     "features/cloud_formation/cloud_formation.feature",
     "features/cloud_formation/dsl/parameterized_initializer.feature",
     "features/cloud_formation/dsl/properties.feature",
@@ -37,6 +39,7 @@ Gem::Specification.new do |s|
     "features/step_definitions/ec2_client_steps.rb",
     "features/support/env.rb",
     "features/support/vcr.rb",
+    "fixtures/vcr_cassettes/ActiveAws_EC2_client_feature/It_has_availability_zones_.yml",
     "fixtures/vcr_cassettes/ActiveAws_EC2_client_feature/It_has_instances_.yml",
     "fixtures/vcr_cassettes/ActiveAws_EC2_client_feature/It_has_regions_.yml",
     "lib/active_aws.rb",
