@@ -1,4 +1,4 @@
-Feature: ActiveAws EC2 client feature
+Feature: ActiveAws EC2 client
   In order to have a better EC2 client
 
   @ec2

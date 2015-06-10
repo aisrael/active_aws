@@ -1,4 +1,4 @@
-A set of wrappers or helpers for the AWS SDK for Ruby v2
+A set of wrappers or helpers for the AWS SDK v2 for Ruby 
 
 ## Contributing to active_aws
  
@@ -14,4 +14,3 @@ A set of wrappers or helpers for the AWS SDK for Ruby v2
 
 Copyright (c) 2015 Alistair A. Israel. See LICENSE.txt for
 further details.
-

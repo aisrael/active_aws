@@ -1,5 +1,8 @@
-- ec2:
-  - client:
-    - ec2_client.feature
-- cloud_formation:
+- client (EC2 Client):
+  - ec2_client.feature
+- cloud_formation (Cloud Formation):
   - cloud_formation.feature
+- dsl (Cloud Formation DSL):
+  - properties.feature
+- templates (Cloud Formation Templates):
+  - ec2_instances.feature

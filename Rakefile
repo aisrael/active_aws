@@ -42,3 +42,10 @@ task :default => :features
 require 'yard'
 YARD::Rake::YardocTask.new do |t|
 end
+
+require 'rspec'
+begin
+  require 'rspec/core/rake_task'
+  RSpec::Core::RakeTask.new(:spec)
+rescue LoadError
+end
