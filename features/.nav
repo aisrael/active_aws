@@ -1,0 +1,5 @@
+- ec2:
+  - client:
+    - ec2_client.feature
+- cloud_formation:
+  - cloud_formation.feature
