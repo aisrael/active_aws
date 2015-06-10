@@ -16,6 +16,12 @@ module ActiveAws
           @ec2.describe_instances.reservations.flat_map(&:instances)
         end
       end
+
+      def availability_zones
+        @availability_zones ||= begin
+          @ec2.describe_availability_zones.availability_zones
+        end
+      end
     end
   end
 end

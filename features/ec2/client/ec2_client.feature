@@ -10,3 +10,10 @@ Feature: ActiveAws EC2 client feature
   Scenario: It has `.instances`
     Given An ActiveAws EC2 client
     Then it should have 1 instances
+
+  @ec2
+  Scenario: It has `.availability_zones`
+    Given An ActiveAws EC2 client
+    Then it should have 2 availability zones
+    And the first availability zone's zone_name should be "ap-southeast-1a"
+    And the last availability zone's zone_name should be "ap-southeast-1b"
