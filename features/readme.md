@@ -1,5 +1,3 @@
-# active_aws
-
 A set of wrappers or helpers for the AWS SDK for Ruby v2
 
 ## Contributing to active_aws
