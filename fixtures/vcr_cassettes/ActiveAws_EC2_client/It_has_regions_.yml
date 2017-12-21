@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://ec2.ap-southeast-1.amazonaws.com/
+    body:
+      encoding: UTF-8
+      string: Action=DescribeRegions&Version=2015-04-15
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=utf-8
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby2/2.0.43 ruby/2.2.2 x86_64-darwin14
+      X-Amz-Date:
+      - 20150611T130143Z
+      Host:
+      - ec2.ap-southeast-1.amazonaws.com
+      X-Amz-Content-Sha256:
+      - edf9b7000580977b273a959c1e9a3cd5eb9ca9254b5013800d6b27423d480047
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAIBEZVV2CZ3CDJ77Q/20150611/ap-southeast-1/ec2/aws4_request,
+        SignedHeaders=content-type;host;user-agent;x-amz-content-sha256;x-amz-date,
+        Signature=a7b2c293cf4df4fd170feebb61700271f26d86402b488de031826b3e3bde504e
+      Content-Length:
+      - '41'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Thu, 11 Jun 2015 13:01:49 GMT
+      Server:
+      - AmazonEC2
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <DescribeRegionsResponse xmlns="http://ec2.amazonaws.com/doc/2015-04-15/">
+            <requestId>40ad0702-90f8-4533-917c-bd0572d2ceb6</requestId>
+            <regionInfo>
+                <item>
+                    <regionName>eu-central-1</regionName>
+                    <regionEndpoint>ec2.eu-central-1.amazonaws.com</regionEndpoint>
+                </item>
+                <item>
+                    <regionName>sa-east-1</regionName>
+                    <regionEndpoint>ec2.sa-east-1.amazonaws.com</regionEndpoint>
+                </item>
+                <item>
+                    <regionName>ap-northeast-1</regionName>
+                    <regionEndpoint>ec2.ap-northeast-1.amazonaws.com</regionEndpoint>
+                </item>
+                <item>
+                    <regionName>eu-west-1</regionName>
+                    <regionEndpoint>ec2.eu-west-1.amazonaws.com</regionEndpoint>
+                </item>
+                <item>
+                    <regionName>us-east-1</regionName>
+                    <regionEndpoint>ec2.us-east-1.amazonaws.com</regionEndpoint>
+                </item>
+                <item>
+                    <regionName>us-west-1</regionName>
+                    <regionEndpoint>ec2.us-west-1.amazonaws.com</regionEndpoint>
+                </item>
+                <item>
+                    <regionName>us-west-2</regionName>
+                    <regionEndpoint>ec2.us-west-2.amazonaws.com</regionEndpoint>
+                </item>
+                <item>
+                    <regionName>ap-southeast-2</regionName>
+                    <regionEndpoint>ec2.ap-southeast-2.amazonaws.com</regionEndpoint>
+                </item>
+                <item>
+                    <regionName>ap-southeast-1</regionName>
+                    <regionEndpoint>ec2.ap-southeast-1.amazonaws.com</regionEndpoint>
+                </item>
+            </regionInfo>
+        </DescribeRegionsResponse>
+    http_version: 
+  recorded_at: Thu, 11 Jun 2015 13:01:51 GMT
+recorded_with: VCR 2.9.3
