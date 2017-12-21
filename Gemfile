@@ -12,10 +12,10 @@ group :development do
   gem 'jeweler', '~> 2.0.1'
 
   # Use cucumber & rspec for tests
-  gem 'rspec', '~> 3.3.0'
-  gem 'cucumber', '~> 2.0.2'
+  gem 'rspec', '~> 3.6.0', require: false
+  gem 'cucumber', '~> 2.4.0', require: false
   # https://github.com/cucumber/aruba
-  gem 'aruba', '~> 0.14.3'
+  gem 'aruba', '~> 0.14.3', require: false
 
   gem 'webmock', '~> 1.21.0'
   gem 'vcr', '2.9.3'
