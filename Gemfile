@@ -1,7 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'activesupport', '4.2.3'
-gem 'aws-sdk', '2.1.11'
+gem 'json', '~> 2.1.0'
+gem 'activesupport', '~> 5.1'
+gem 'aws-sdk', '2.2.34'
 gem 'dotenv', '2.0.2'
 
 # Add dependencies to develop your gem here.
@@ -14,19 +15,19 @@ group :development do
   gem 'rspec', '~> 3.3.0'
   gem 'cucumber', '~> 2.0.2'
   # https://github.com/cucumber/aruba
-  gem 'aruba', '0.8.1'
+  gem 'aruba', '~> 0.14.3'
 
   gem 'webmock', '~> 1.21.0'
   gem 'vcr', '2.9.3'
 
   # Code coverage using simplecov
-  gem 'simplecov', '~> 0.10.0', '>= 0', require: false
+  gem 'simplecov', '~> 0.14.1', require: false
 
   # Code style checking
   gem 'rubocop', '~> 0.32.1', require: false
 
   # Documentation
-  gem 'rdoc', '~> 4.2.0'
-  gem 'yard', '~> 0.8.7.6', require: false
+  gem 'rdoc', '~> 6.0.0'
+  gem 'yard', '~> 0.9.12', require: false
   gem 'redcarpet', '~> 3.3.2'
 end
